@@ -1,0 +1,320 @@
+$color-primary: #606C38; // Olive Drab
+$color-secondary: #283618; // Dark Olive Green
+$color-light: #FEFAE0; // Beige
+$color-accent: #DDA15E; // Gold
+$color-dark-accent: #BC6C25; // Rust
+
+#Home {
+    background-color: $color-light;
+    color: $color-secondary;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-primary;
+        padding: 10px;
+        
+
+        .logo {
+            width: 150px;
+        }
+
+        #sidemenu {
+            list-style: none;
+            display: flex;
+
+            li {
+                margin: 0 15px;
+
+                a {
+                    text-decoration: none;
+                    color: $color-light;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: $color-accent;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-text {
+        text-align: center;
+        padding: 100px 0;
+        background-color: $color-primary;
+        color: $color-light;
+        
+
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 50px;
+            line-height: 1.2;
+        }
+
+    .btn-reservation {
+            background-color: $color-accent;
+            color: $color-secondary;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+
+            &:hover {
+                background-color: $color-dark-accent;
+            }
+        }
+    }
+
+    #SpecialOffers {
+        padding: 50px 0;
+
+        .about-col-1, .about-col-2 {
+            text-align: left;
+            
+
+            h1 {
+                font-size: 30px;
+                color: $color-primary;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-top: 20px;
+                
+
+            }
+
+            .btn {
+                background-color: $color-primary;
+                color: $color-light;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                display: inline-block;
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                &:hover {
+                    background-color: $color-accent;
+                }
+            }
+        }
+    }
+
+    #WhyUs {
+        background-color: $color-secondary;
+        color: $color-light;
+        padding: 50px 0;
+
+        .WhyUs-text {
+            text-align: center;
+
+            h1 {
+                font-size: 40px;
+            }
+
+            img {
+                max-width: 150px;
+                margin-top: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    #services1, #services2, #services3 {
+        padding: 50px 0;
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .col-1, .col-4, .col-5 {
+                flex: 1;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                }
+            }
+
+            .col-2, .col-3, .col-6 {
+                flex: 1;
+                padding-left: 30px;
+
+                .sub-title {
+                    font-size: 30px;
+                    color: $color-primary;
+                }
+
+                .line {
+                    width: 50px;
+                    height: 3px;
+                    background-color: $color-accent;
+                    margin: 10px 0;
+                }
+
+                .paragraph {
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
+
+                .btn {
+                    background-color: $color-primary;
+                    color: $color-light;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    display: inline-block;
+                    margin-top: 20px;
+
+                    &:hover {
+                        background-color: $color-accent;
+                    }
+                }
+            }
+        }
+    }
+
+    #SpecialProjects {
+        background-color: $color-primary;
+        color: $color-light;
+        padding: 50px 0;
+
+        .SpecialProjects-text {
+            text-align: center;
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .btn-specialproject {
+                background-color: $color-accent;
+                color: $color-secondary;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                display: inline-block;
+                margin-top: 20px;
+
+                &:hover {
+                    background-color: $color-dark-accent;
+                }
+            }
+        }
+    }
+
+    #social-media {
+        padding: 50px 0;
+
+        .social-media-title {
+            text-align: center;
+            font-size: 30px;
+            color: $color-primary;
+        }
+
+        .social-media-list {
+            display: flex;
+            justify-content: space-around;
+
+            .media {
+                text-align: center;
+                position: relative;
+
+                img {
+                    max-width: 100px;
+                    height: auto;
+                    border-radius: 50%;
+                }
+
+                .layer {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba($color-secondary, 0.8);
+                    color: $color-light;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    transition: opacity 0.3s;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    h2 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        margin-top: 10px;
+                    }
+
+                    i {
+                        font-size: 25px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav2 {
+        background-color: $color-secondary;
+        color: $color-light;
+        padding: 20px 0;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo {
+                width: 150px;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+
+                li {
+                    margin: 0 15px;
+
+                    a {
+                        text-decoration: none;
+                        color: $color-light;
+                        font-weight: bold;
+
+                        &:hover {
+                            color: $color-accent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
